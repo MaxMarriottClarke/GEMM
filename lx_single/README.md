@@ -27,6 +27,14 @@ These are the reference numbers to beat.
 ## Naive
 
 - Simple Implementation of Just C = A @ B
-- Gets about 1/100 the performance of Numpy :(
-- Lots of things to try and change
-- with O3 we actually get about 1/7 of numpy
+- Gets about 1/100 of NumPy performance
+
+## Tiled
+
+The tiled version breaks the matrix multiply into small `32 x 32` blocks instead of working on the full rows and columns at once.
+
+It works by looping over tiles of `A`, `B`, and `C`, then doing the multiply and accumulate inside one small block before moving to the next one.
+
+This speeds things up because the data being reused stays in cache for longer, so the CPU spends less time waiting on memory.
+
+With this version we see about a `3x` speedup over the naive implementation.
