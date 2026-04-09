@@ -4,7 +4,7 @@
 # - float64: about 34.5 GFLOP/s (~82.9% of 41.6 GFLOP/s peak)
 import numpy as np
 import time
-N = 4096
+N = 1024
 
 if __name__ == "__main__":
     A = np.random.rand(N, N).astype(np.float64)

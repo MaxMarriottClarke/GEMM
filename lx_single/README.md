@@ -25,3 +25,8 @@ These are the reference numbers to beat.
 # C++
 
 ## Naive
+
+- Simple Implementation of Just C = A @ B
+- Gets about 1/100 the performance of Numpy :(
+- Lots of things to try and change
+- with O3 we actually get about 1/7 of numpy
