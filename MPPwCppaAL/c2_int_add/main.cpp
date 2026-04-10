@@ -5,15 +5,6 @@
 #include <iostream>
 #include "c2_int_add.h"
 
-static void AddI16(void);
-static void AddU16(void);
-
-int main()
-{
-    AddI16();
-    AddU16();
-    return 0;
-}
 
 static void AddI16(void)
 {
@@ -66,3 +57,13 @@ static void AddU16(void)
     std::cout << "b:  " << b.ToStringU16() << nl;
     std::cout << "c2: " << c2.ToStringU16() << nl;
 }
+
+
+int main()
+{
+    AddI16();
+    AddU16();
+    return 0;
+}
+
+
