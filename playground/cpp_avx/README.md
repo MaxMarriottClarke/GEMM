@@ -1,4 +1,5 @@
-# Modern Parallel Programming with C++ and Assembly Language
+# cpp_avx
 
-Reading this book and implementing the examples before optimising GEMM on AVX CPU core
-https://github.com/Apress/modern-parallel-programming-cpp-assembly
+My playground for learning C++ AVX instructions
+
+Based on my readon of: Modern Parallel Programming with C++ and Assembly Language
