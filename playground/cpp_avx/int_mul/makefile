@@ -1,7 +1,7 @@
 TARGET = main
 CXX = g++
 CXXFLAGS = -std=c++14 -O2 -Wall -Wextra -m64 -mavx -I. -I../include
-SOURCES = main.cpp c2_int_mul.cpp
+SOURCES = main.cpp int_mul.cpp
 
 .PHONY: all run clean
 

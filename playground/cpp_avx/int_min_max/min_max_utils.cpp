@@ -1,8 +1,5 @@
-//------------------------------------------------
-//               Ch02_06_misc.cpp
-//------------------------------------------------
 
-#include "c2_min_max.h"
+#include "min_max.h"
 #include "MT.h"
 
 void InitArray(uint8_t* x, size_t n, unsigned int rng_seed)

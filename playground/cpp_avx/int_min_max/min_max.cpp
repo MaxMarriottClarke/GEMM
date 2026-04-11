@@ -1,6 +1,6 @@
 
 #include <immintrin.h>
-#include "c2_min_max.h"
+#include "min_max.h"
 #include "AlignedMem.h"
 
 bool CalcMinMaxU8_Cpp(uint8_t* x_min, uint8_t* x_max, const uint8_t* x, size_t n) {

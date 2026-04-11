@@ -1,5 +1,5 @@
 #include <immintrin.h>
-#include "c2_int_mul.h"
+#include "int_mul.h"
 
 void MulI16_Iavx(XmmVal c[2], const XmmVal* a, const XmmVal* b) {
     __m128i a_vals = _mm_load_si128((__m128i*)a);

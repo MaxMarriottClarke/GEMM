@@ -3,7 +3,7 @@
 //------------------------------------------------
 
 #include <iostream>
-#include "c2_int_add.h"
+#include "int_add.h"
 
 
 static void AddI16(void)

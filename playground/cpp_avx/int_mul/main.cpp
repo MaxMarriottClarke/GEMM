@@ -1,11 +1,8 @@
-//------------------------------------------------
-//               Ch02_03.cpp
-//------------------------------------------------
 
 #include <iostream>
 #include <iomanip>
 #include <string>
-#include "c2_int_mul.h"
+#include "int_mul.h"
 
 
 

@@ -1,5 +1,5 @@
 #include <immintrin.h>
-#include "c2_int_add.h"
+#include "int_add.h"
 
 void AddI16_Iavx(XmmVal* c1, XmmVal* c2, const XmmVal* a, const XmmVal* b) {
 

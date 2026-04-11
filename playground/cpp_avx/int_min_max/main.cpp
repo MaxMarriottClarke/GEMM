@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include "c2_min_max.h"
+#include "min_max.h"
 #include "AlignedMem.h"
 #include "BmThreadTimer.h"
 
@@ -55,7 +55,7 @@ void CalcMinMaxU8_bm(void)
         bmtt.Stop(i, 1);
     }
 
-    std::string fn = bmtt.BuildCsvFilenameString("Ch02_06_CalcMinMaxU8_bm");
+    std::string fn = bmtt.BuildCsvFilenameString("CalcMinMaxU8_bm");
     bmtt.SaveElapsedTimes(fn, BmThreadTimer::EtUnit::MicroSec, 2);
     std::cout << "Benchmark times save to file " << fn << '\n';
 }
