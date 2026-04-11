@@ -33,10 +33,10 @@ void MulI32b_Iavx(XmmVal c[2], const XmmVal* a, const XmmVal* b) {
     __m128i temp3 = _mm_srli_si128(b_vals, 4);
     __m128i temp4 = _mm_mul_epi32(temp2, temp3);
 
-    *(&c[0].m_I64[0]) = _mm_extract_epi64(temp1, 0);
-    *(&c[0].m_I64[1]) = _mm_extract_epi64(temp4, 0);
-    *(&c[1].m_I64[0]) = _mm_extract_epi64(temp1, 1);
-    *(&c[1].m_I64[1]) = _mm_extract_epi64(temp4, 1);
+    c[0].m_I64[0] = _mm_extract_epi64(temp1, 0);
+    c[0].m_I64[1] = _mm_extract_epi64(temp4, 0);
+    c[1].m_I64[0] = _mm_extract_epi64(temp1, 1);
+    c[1].m_I64[1] = _mm_extract_epi64(temp4, 1);
 
 
 }
